@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang 0"eng>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1>
+
+		<meta name="description" content="Prueba para Zweicomm, basado en ejemplos de bootstrap para estilizado">
+		<meta name="author" content="Jaime Feller">
+
+		<title> Fibonacci Calculator - Zweicomm</title>
+		<link rel="icon" href="favicon.ico">
+
+		<!-- core CSS Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<br>
+
+	
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="http://www.zweicom.com">
+			<img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+			Zweicom</a>
+		</nav>
+
+		<main role="main" class="container">
+			<div class="jumbotron">
+				<center><h1>Calculadora de Fibonacci</h1></center>
+				<p class="lead">Este es un pequeño programa que permite calcular el n-avo número de Fibonacci. Debido a las limitaciones de IEEE 754 no es posible mostrar con exactitud los numeros de fibonacci mayores al que ocupa el lugar 78.</p>
+				<p class="lead"> Es posible, en teoria, calcular numeros mayores a 78 ya que se realizo una funcion capaz de sumar strings de numeros, pero no se recomienda su uso debido al estress que produce en el sistema.</p>
+			</div>
+			<form>
+				<div class="container">
+					<div class="form-group row">
+						<div class="col-md-3 offset-md-2">
+							Quiero el Fibonacci Numero:
+						</div>
+						<div class="col-md-3">
+							<input type="number" class="form.control" placeholder="0" id="NumeroObjetivo">
+						</div>
+							<button type="submit" class="btn btn-primary" onclick="obtenerNumero()">Calcular</button>
+						<div class="col-md-2">
+						</div>
+					</div>
+				</div>
+			</form>
+
+
+</div>
+		</main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+
+	</body>
+	
+	<!-- Funciones -->
+	<script src='fcn/funciones.js'></script>
+	
+</html>
+
+
